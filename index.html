@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>resume</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Menu</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path
+                  d="M3,13h1v2v5c0,1.103,0.897,2,2,2h3h6h3c1.103,0,2-0.897,2-2v-5v-2h1c0.404,0,0.77-0.244,0.924-0.617 c0.155-0.374,0.069-0.804-0.217-1.09l-9-9c-0.391-0.391-1.023-0.391-1.414,0l-9,9c-0.286,0.286-0.372,0.716-0.217,1.09 C2.23,12.756,2.596,13,3,13z M10,20v-5h4v5H10z M12,4.414l6,6V15l0,0l0.001,5H16v-5c0-1.103-0.897-2-2-2h-4c-1.103,0-2,0.897-2,2v5 H6v-5v-3v-1.586L12,4.414z">
+                </path>
+              </svg> Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1)">
+                <circle fill="none" cx="12" cy="7" r="3"></circle>
+                <path
+                  d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z">
+                </path>
+              </svg> Profile
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path
+                  d="M6,22h15v-2H6.012C5.55,19.988,5,19.805,5,19s0.55-0.988,1.012-1H19h1h1v-1v-2V4c0-1.103-0.897-2-2-2H6 C4.794,2,3,2.799,3,5v3v6v3v2C3,21.201,4.794,22,6,22z M5,8V5c0-0.805,0.55-0.988,1-1h13v11v1H5v-2V8z">
+                </path>
+                <path d="M8 6H17V8H8z"></path>
+              </svg> Education
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path
+                  d="M21,11h-3V4c0-0.553-0.447-1-1-1H3C2.447,3,2,3.447,2,4v14c0,1.654,1.346,3,3,3h14c1.654,0,3-1.346,3-3v-6 C22,11.447,21.553,11,21,11z M5,19c-0.552,0-1-0.448-1-1V5h12v13c0,0.351,0.061,0.688,0.171,1H5z M20,18c0,0.552-0.448,1-1,1 s-1-0.448-1-1v-5h2V18z">
+                </path>
+                <path d="M6 7H14V9H6zM6 11H14V13H6zM11 15H14V17H11z"></path>
+              </svg> Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path
+                  d="M20,6h-3V4c0-1.103-0.897-2-2-2H9C7.897,2,7,2.897,7,4v2H4C2.897,6,2,6.897,2,8v11c0,1.103,0.897,2,2,2h16 c1.103,0,2-0.897,2-2V8C22,6.897,21.103,6,20,6z M15,4v2H9V4H15z M8,8h8h4v3H4V8H8z M4,19v-6h6v2h4v-2h6l0.001,6H4z">
+                </path>
+              </svg> Experience
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#certificates" class="nav__link">
+              <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1)">
+                <path
+                  d="M5,8.999c0,1.902,0.765,3.627,2,4.89V21c0,0.347,0.18,0.668,0.474,0.851c0.295,0.184,0.664,0.198,0.973,0.044L12,20.118 l3.553,1.776C15.694,21.965,15.847,22,16,22c0.183,0,0.365-0.05,0.525-0.149C16.82,21.668,17,21.347,17,21v-7.11 c1.235-1.263,2-2.988,2-4.891C19,5.14,15.86,2,12,2S5,5.14,5,8.999z M12.447,18.105c-0.281-0.141-0.613-0.141-0.895,0L9,19.382 v-4.067C9.911,15.749,10.926,16,12,16s2.089-0.25,3-0.685v4.066L12.447,18.105z M12,4c2.756,0,5,2.242,5,4.999 C17,11.757,14.757,14,12,14c-2.757,0-5-2.243-5-5.001C7,6.242,9.243,4,12,4z">
+                </path>
+              </svg> Certificates
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <svg class="nav__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill:rgba(0, 0, 0, 1);">
+          <path
+            d="M10 3H4C3.448 3 3 3.448 3 4v6c0 .552.448 1 1 1h6c.552 0 1-.448 1-1V4C11 3.448 10.552 3 10 3zM9 9H5V5h4V9zM14 11h6c.553 0 1-.448 1-1V4c0-.552-.447-1-1-1h-6c-.553 0-1 .448-1 1v6C13 10.552 13.447 11 14 11zM15 5h4v4h-4V5zM3 20c0 .552.448 1 1 1h6c.552 0 1-.448 1-1v-6c0-.552-.448-1-1-1H4c-.552 0-1 .448-1 1V20zM5 15h4v4H5V15zM13 20c0 .552.447 1 1 1h6c.553 0 1-.448 1-1v-6c0-.552-.447-1-1-1h-6c-.553 0-1 .448-1 1V20zM15 15h4v4h-4V15z">
+          </path>
+        </svg>
+
+
+      </div>
+    </nav>
+
+  </header>
+  <main class="l-main bd-container">
+
+    <div class="resume">
+
+      <div class="resume__left">
+        <div class="print">
+          <i class="bx bx-printer nav__icon home__icon"></i>
+
+        </div>
+
+
+        <!-- home -->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+
+
+              <!-- <img src="./images/DTCra.png" alt="" class=" left home__img"> -->
+
+              <h1 class="home__title">PILATOVA <b>JANA</b></h1>
+              <h3 class="home__proffesion">Junior Front-End</h3>
+
+
+
+            </div>
+
+            <div class="home__address bd-grid">
+              <span class="home__info">
+                <svg class="home__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:rgba(0, 0, 0, 1);">
+                  <path
+                    d="M12,14c2.206,0,4-1.794,4-4s-1.794-4-4-4s-4,1.794-4,4S9.794,14,12,14z M12,8c1.103,0,2,0.897,2,2s-0.897,2-2,2 s-2-0.897-2-2S10.897,8,12,8z">
+                  </path>
+                  <path
+                    d="M11.42,21.814C11.594,21.938,11.797,22,12,22s0.406-0.062,0.58-0.186C12.884,21.599,20.029,16.44,20,10 c0-4.411-3.589-8-8-8S4,5.589,4,9.995C3.971,16.44,11.116,21.599,11.42,21.814z M12,4c3.309,0,6,2.691,6,6.005 c0.021,4.438-4.388,8.423-6,9.73C10.389,18.427,5.979,14.441,6,10C6,6.691,8.691,4,12,4z">
+                  </path>
+                </svg>
+                Vadovce 219, 916 13
+
+              </span>
+              <span class="home__info">
+                <svg class="home__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:rgba(0, 0, 0, 1);">
+                  <path
+                    d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z">
+                  </path>
+                </svg>
+                pilatova.janka999@gmail.com
+
+              </span>
+              <span class="home__info">
+                <svg class="home__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:rgba(0, 0, 0, 1);">
+                  <path
+                    d="M17.707,12.293c-0.391-0.391-1.023-0.391-1.414,0l-1.594,1.594c-0.739-0.22-2.118-0.72-2.992-1.594 s-1.374-2.253-1.594-2.992l1.594-1.594c0.391-0.391,0.391-1.023,0-1.414l-4-4c-0.391-0.391-1.023-0.391-1.414,0L3.581,5.005 c-0.38,0.38-0.594,0.902-0.586,1.435c0.023,1.424,0.4,6.37,4.298,10.268s8.844,4.274,10.269,4.298c0.005,0,0.023,0,0.028,0 c0.528,0,1.027-0.208,1.405-0.586l2.712-2.712c0.391-0.391,0.391-1.023,0-1.414L17.707,12.293z M17.58,19.005 c-1.248-0.021-5.518-0.356-8.873-3.712c-3.366-3.366-3.692-7.651-3.712-8.874L7,4.414L9.586,7L8.293,8.293 C8.054,8.531,7.952,8.875,8.021,9.205c0.024,0.115,0.611,2.842,2.271,4.502s4.387,2.247,4.502,2.271 c0.333,0.071,0.674-0.032,0.912-0.271L17,14.414L19.586,17L17.58,19.005z">
+                  </path>
+                </svg>
+                0915 156 537
+              </span>
+              <span class="home__info">
+                <i class='home__icon bx bx-cake'>
+
+                </i>24.08.1990
+
+              </span>
+        </section>
+
+        <section class="profile section" id="profile">
+          <h2 class="section-title">Profile</h2>
+
+          <p class="profile__description">Hi,I like coding,learning and I am ready to take it serious.I am motivated
+            and trying to be self-existent person, but also love to be part of team, Im empathic and helpful.
+
+          </p>
+
+        </section>
+        <section class="education section" id="education">
+          <h2 class="section-title">
+            Education
+          </h2>
+          <div class="education__container bd-grid">
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+
+              </div>
+              <div class="education__data bd-grid">
+
+                <span class="education__studies">SOU Nové Mesto n. Váhom</span>
+                <span class="education__year">
+                  2004-2008
+                </span>
+              </div>
+            </div>
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+
+              </div>
+              <div class="education__data bd-grid">
+
+                <span class="education__studies"> UCM,Katedra aplikovanej informaiky a matematiky</span>
+                <span class="education__year">
+                  2017,2018
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="skills section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills__content bd-grid">
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span>Html
+              </li>
+
+              <li class="skills__name">
+                <span class="skills__circle"></span>Css,Scss
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>JQuery
+              </li>
+
+              <li class="skills__name">
+                <span class="skills__circle"></span>Javascript
+              </li>
+
+
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span>MS Office
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>Photoshop
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>Bootstrap
+              </li>
+
+              <li class="skills__name">
+                <span class="skills__circle"></span> Google
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+      </div>
+      <div class="resume__right">
+
+
+        <!-- Experience -->
+
+        <section class="exp section" id="exp">
+          <h2 class="section-title"> Last experience</h2>
+
+
+          <div class="exp__container bd-grid">
+            <div class="exp__content">
+              <div class="exp__time">
+                <span class="exp__rounder"></span>
+                <span class="exp__line"></span>
+              </div>
+
+
+              <div class="exp__data bd-grid">
+                <h3 class="exp__title"> Web creator and content admin
+
+                </h3>
+                <span class="exp__company">2019 to 2021 | Darkmay s.r.o </span>
+                <p class="exp__description">
+                  Filling and editing<a target="_blank" href="http://https://www.zuzkatravel.sk/"> WEBSITES
+                  </a>administration of
+                  own cms
+                  system
+                  for travel agencies in Slovak and
+                  Czech Republic,testing, comunication with clients and external programmers and graphics designers.
+
+                </p>
+              </div>
+            </div>
+            <div class="exp__content">
+              <div class="exp__time">
+                <span class="exp__rounder"></span>
+                <span class="exp__line"></span>
+              </div>
+
+
+              <div class="exp__data bd-grid">
+                <h3 class="exp__title">
+                  Lector
+                </h3>
+                <span class="exp__company">2019 | Zákl.škola Bottova,Trnava </span>
+                <p class="exp__description">After-school game design course for pupils</p>
+                <a href="https://hemisfera.sk/gamecraft-online"> - About course -</a>
+              </div>
+            </div>
+            <div class="exp__content">
+              <div class="exp__time">
+                <span class="exp__rounder"></span>
+                <span class="exp__line"></span>
+              </div>
+
+
+              <div class="exp__data bd-grid">
+                <h3 class="exp__title">
+                  Projects from online courses and trainee programs
+                </h3>
+                <span class="exp__company"></span>
+                <p class="exp__description">
+                  <a href="https://kst-atom.isite.sk/"> - kst-atom -</a> <br>
+
+                  <a href="https://wynxa.cz/en/"> - wynxa.cz -</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Certificates -->
+        <section class="cert section" id="cert">
+          <h2 class="section-title">Certificates</h2>
+          <div class="cert__container bd-grid">
+
+
+            <div class="cert__content">
+              <h3 class="cert__title">Vizion s.r.o. , Trnava
+
+              </h3>
+              <p class="cert__description">
+                Intership / Frontend developer
+              </p>
+            </div>
+
+
+
+
+
+            <div class="cert__content">
+              <h3 class="cert__title">Hemisféra s.r.o , Bratislava
+
+              </h3>
+              <p class="cert__description">
+                Course and part-time job /
+                Basics of game design
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Languages-->
+
+        <section class="lang-title">
+          <h2 class="section-title">Languages</h2>
+          <div class="lang__container">
+            <ul class="lang__content bd-grid">
+              <li class="lang__name">
+                <span class="lang__circle"></span>Slovak
+              </li>
+              <li class="lang__name">
+                <span class="lang__circle"></span>English
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- INTERESTS -->
+
+        <section class="inter section" id="inter">
+          <h2 class="section-title">Interests</h2>
+          <div class="inter__container bd-grid">
+            <div class="inter__content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path
+                  d="M5.996 9c1.413 0 2.16-.747 2.705-1.293C9.191 7.217 9.432 7 9.993 7s.802.217 1.292.707C11.83 8.253 12.577 9 13.991 9c1.415 0 2.163-.747 2.71-1.293C17.192 7.217 17.433 7 17.996 7s.804.217 1.295.707C19.837 8.253 20.585 9 22 9V7c-.563 0-.804-.217-1.295-.707C20.159 5.747 19.411 5 17.996 5s-2.162.747-2.709 1.292C14.796 6.783 14.556 7 13.991 7c-.562 0-.802-.217-1.292-.707C12.154 5.747 11.407 5 9.993 5S7.832 5.747 7.287 6.293C6.797 6.783 6.557 7 5.996 7S5.195 6.783 4.705 6.293C4.16 5.747 3.413 5 2 5v2c.561 0 .801.217 1.291.707C3.836 8.253 4.583 9 5.996 9zM5.996 14c1.413 0 2.16-.747 2.705-1.293C9.191 12.217 9.432 12 9.993 12s.802.217 1.292.707C11.83 13.253 12.577 14 13.991 14c1.415 0 2.163-.747 2.71-1.293C17.192 12.217 17.433 12 17.996 12s.804.217 1.295.707C19.837 13.253 20.585 14 22 14v-2c-.563 0-.804-.217-1.295-.707C20.159 10.747 19.411 10 17.996 10s-2.162.747-2.709 1.292C14.796 11.783 14.556 12 13.991 12c-.562 0-.802-.217-1.292-.707C12.154 10.747 11.407 10 9.993 10s-2.161.747-2.706 1.293C6.797 11.783 6.557 12 5.996 12s-.801-.217-1.291-.707C4.16 10.747 3.413 10 2 10v2c.561 0 .801.217 1.291.707C3.836 13.253 4.583 14 5.996 14zM5.996 19c1.413 0 2.16-.747 2.705-1.293C9.191 17.217 9.432 17 9.993 17s.802.217 1.292.707C11.83 18.253 12.577 19 13.991 19c1.415 0 2.163-.747 2.71-1.293C17.192 17.217 17.433 17 17.996 17s.804.217 1.295.707C19.837 18.253 20.585 19 22 19v-2c-.563 0-.804-.217-1.295-.707C20.159 15.747 19.411 15 17.996 15s-2.162.747-2.709 1.292C14.796 16.783 14.556 17 13.991 17c-.562 0-.802-.217-1.292-.707C12.154 15.747 11.407 15 9.993 15s-2.161.747-2.706 1.293C6.797 16.783 6.557 17 5.996 17s-.801-.217-1.291-.707C4.16 15.747 3.413 15 2 15v2c.561 0 .801.217 1.291.707C3.836 18.253 4.583 19 5.996 19z">
+                </path>
+              </svg>
+              <span class="inter__name">Water</span>
+            </div>
+            <div class="inter__content">
+              <svg class="inter__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path d="M20 18L16 13 19 13 15 8 17 8 12 2 7 8 9 8 5 13 8 13 4 18 11 18 11 22 13 22 13 18z"></path>
+              </svg>
+              <span class="inter__name">Nature</span>
+            </div>
+            <div class="inter__content">
+              <svg class="inter__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1);">
+                <path
+                  d="M16.375,2H7.621C7.397,2,6.222,2.065,5.118,3.351C4.031,4.616,4,5.862,4,6v2v9c0,1.104,0.896,2,2,2h1l-2,3h2.353l0.667-1h8 l0.677,1H19l-2-3h1c1.104,0,2-0.896,2-2v-3v-2V8V6.019V6c0.001-0.188-0.032-1.434-1.129-2.665C17.715,2.037,16.509,2,16.375,2z M10,4h4v2h-4V4z M7.5,17C6.672,17,6,16.328,6,15.5S6.672,14,7.5,14S9,14.672,9,15.5S8.328,17,7.5,17z M16.5,17 c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S17.328,17,16.5,17z M18,12H6V8h12V12z">
+                </path>
+              </svg>
+              <span class="inter__name">Travel</span>
+            </div>
+            <div class="inter__content">
+              <svg class="inter__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill:rgba(0, 0, 0, 1)">
+                <path
+                  d="M21,10H7V7c0-1.103,0.897-2,2-2s2,0.897,2,2h2c0-2.206-1.794-4-4-4S5,4.794,5,7v3H3c-0.553,0-1,0.447-1,1v2 c0,2.606,1.674,4.823,4,5.65V22h2v-3h8v3h2v-3.35c2.326-0.827,4-3.044,4-5.65v-2C22,10.447,21.553,10,21,10z M20,13 c0,2.206-1.794,4-4,4H8c-2.206,0-4-1.794-4-4v-1h16V13z">
+                </path>
+              </svg>
+              <span class="inter__name">SPA</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+    <span class="created"> </span> <strong> Jana Pilatova 2021 </strong> </span>
+
+  </main>
+
+
+  <a href="#" class="scrolltop" id="scroll">
+    <svg class="top" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      style="fill:rgba(0, 0, 0, 1);">
+      <path d="M13 18L13 12 18 12 12 5 6 12 11 12 11 18z"></path>
+    </svg>
+  </a>
+
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
