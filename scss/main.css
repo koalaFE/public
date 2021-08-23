@@ -84,7 +84,6 @@ img {
 
 /* ==========LAYOUT========== */
 .bd-container {
-  max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -270,7 +269,8 @@ img {
 
 .education__title,
 .exp__title {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  padding: 14px 0px;
 }
 
 .education__studies,
@@ -283,9 +283,12 @@ img {
   font-size: 0.813rem;
 }
 
-.profile__description,
+.profile__description {
+  text-align: justify;
+}
+
 .exp__description {
-  letter-spacing: 1px;
+  text-align: left;
 }
 
 .skills__content,
@@ -373,7 +376,7 @@ img {
 }
 @media screen and (min-width: 968px) {
   body {
-    margin: 3rem 0;
+    margin: 1rem 0;
   }
 
   .bd-container {
@@ -382,7 +385,7 @@ img {
   }
 
   .l-header,
-  .scrolltop {
+.scrolltop {
     display: none;
   }
 
@@ -398,13 +401,13 @@ img {
   }
 
   .resume__left,
-  .resume__right {
+.resume__right {
     padding: 0 1.5rem;
   }
 
   .section-title,
-  .profile__description {
-    text-align: initial;
+.profile__description {
+    text-align: justify;
   }
 
   .home-container {
@@ -419,13 +422,13 @@ img {
     grid-template-columns: repeat(3, -webkit-max-content);
     grid-template-columns: repeat(3, max-content);
     -moz-column-gap: 3.5rem;
-    column-gap: 3.5rem;
+         column-gap: 3.5rem;
   }
 
   .inter__container {
     grid-template-columns: repeat(2, -webkit-max-content);
     grid-template-columns: repeat(2, max-content);
     -moz-column-gap: 3.5rem;
-    column-gap: 3.5rem;
+         column-gap: 3.5rem;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

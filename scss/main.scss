@@ -141,7 +141,6 @@ img {
 /* ==========LAYOUT========== */
 
 .bd-container {
-  max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: $mb-3;
   margin-right: $mb-3;
@@ -319,7 +318,8 @@ img {
 }
 .education__title,
 .exp__title {
-  font-size: $h3;
+  font-size: 1.4rem;
+  padding: 14px 0px;
 }
 
 .education__studies,
@@ -331,10 +331,13 @@ img {
   font-size: $smaller;
 }
 
-.profile__description,
-.exp__description {
+.profile__description {
   text-align: justify;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
+}
+
+.exp__description {
+  text-align: left;
 }
 
 //Skills and Languages
@@ -428,7 +431,7 @@ img {
 
 @media screen and (min-width: 968px) {
   body {
-    margin: 3rem 0;
+    margin: 1rem 0;
   }
 
   .bd-container {
@@ -454,7 +457,7 @@ img {
   }
   .section-title,
   .profile__description {
-    text-align: initial;
+    text-align: justify;
   }
   .home-container {
     gap: 1.5rem;
