@@ -1,15 +1,3 @@
-//ctrl a sipky sa posuvam po slovach, ctrl end a home je zaciatok a koniec page,
-
-// a iba end a home zaciatok a koniec v riadku
-
-//win shif S  je screenshot
-
-/////////////////print btn
-let btn = document.querySelector(".bx-printer")
-btn.onclick = () => {
-  window.print()
-}
-
 ///////NAV TOGGLE
 
 const showMenu = (toggleId, navId) => {

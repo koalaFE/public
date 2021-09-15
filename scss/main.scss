@@ -233,6 +233,9 @@ img {
 }
 
 .home__data {
+  color: #0b0a0a;
+  font-weight: 600;
+  font-size: 15px;
   gap: 0.5rem;
 }
 
@@ -368,7 +371,7 @@ img {
 
 //Certificates
 .cert__title {
-  font-size: $h3;
+  font-size: 1.2rem;
   margin-bottom: $mb-1;
 }
 
