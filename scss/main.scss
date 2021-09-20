@@ -423,6 +423,11 @@ img {
   flex-direction: row-reverse;
   display: flex;
 }
+.group {
+  display: flex;
+  justify-content: inherit;
+  align-items: baseline;
+}
 
 // MEDIA
 @media screen and (max-width: 320px) {

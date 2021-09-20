@@ -371,6 +371,12 @@ img {
   display: flex;
 }
 
+.group {
+  display: flex;
+  justify-content: inherit;
+  align-items: baseline;
+}
+
 @media screen and (max-width: 320px) {
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
@@ -388,7 +394,7 @@ img {
   }
 
   .l-header,
-  .scrolltop {
+.scrolltop {
     display: none;
   }
 
@@ -404,12 +410,12 @@ img {
   }
 
   .resume__left,
-  .resume__right {
+.resume__right {
     padding: 0 1.5rem;
   }
 
   .section-title,
-  .profile__description {
+.profile__description {
     text-align: justify;
   }
 
@@ -425,13 +431,13 @@ img {
     grid-template-columns: repeat(3, -webkit-max-content);
     grid-template-columns: repeat(3, max-content);
     -moz-column-gap: 3.5rem;
-    column-gap: 3.5rem;
+         column-gap: 3.5rem;
   }
 
   .inter__container {
     grid-template-columns: repeat(2, -webkit-max-content);
     grid-template-columns: repeat(2, max-content);
     -moz-column-gap: 3.5rem;
-    column-gap: 3.5rem;
+         column-gap: 3.5rem;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
