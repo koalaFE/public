@@ -289,6 +289,7 @@ img {
 
 .profile__description {
   text-align: justify;
+  font-size: 1rem;
 }
 
 .exp__description {
